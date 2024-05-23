@@ -31,7 +31,6 @@ export const Popup = ({
 	useEffect(() => {
 		document.addEventListener('click', handleClickOutside, true);
 		return () => {document.removeEventListener('click', handleClickOutside, true);};
-<<<<<<< HEAD
 	}, [openState]);
 
 	// Render component.
@@ -42,20 +41,5 @@ export const Popup = ({
 			</button>
 			{(isOpenState && <div className='popup-view'>{children}</div>)}
 		</div>
-=======
-	}, []);
-
-	// Render component.
-	return (	
-		<button 
-			className='popup-button' 
-			ref={dropdownRef} 
-			onClick={handleClick}
-			{...props} 
-		>
-			{(text.length != 0 && <span>{text}</span>)}
-			{(isOpenState && <div className='popup-view'>{children}</div>)}
-		</button>
->>>>>>> fa0a6c237577a0f18b48654f1e055ca32aab2241
 	)
 }
