@@ -25,7 +25,11 @@ export const Paginator = ({
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
 
+<<<<<<< HEAD
 	// Get first link.
+=======
+	// Определить первую ссылку.
+>>>>>>> fa0a6c237577a0f18b48654f1e055ca32aab2241
 	const firstVisiblePageControl = Math.min(
 		Math.max(currentPage - Math.floor(visiblePageControls / 2), 1),
 		totalPages - visiblePageControls + 1
@@ -45,6 +49,7 @@ export const Paginator = ({
 	}
 
 	return (
+<<<<<<< HEAD
 		<div className='paginator' {...props}>
 			<button className='paginator-button paginator-first' onClick={handleFirst} disabled={currentPage === 1}>
 				<i className={'fa-solid fa-angle-double-left'}></i>
@@ -60,5 +65,24 @@ export const Paginator = ({
 				<i className={'fa-solid fa-angle-double-right'}></i>
 			</button>
 		</div>
+=======
+    <div {...props}>
+      <div className='paginator'>
+				<button className='paginator-button paginator-first' onClick={handleFirst} disabled={currentPage === 1}>
+					<i className={'fa-solid fa-angle-double-left'}></i>
+				</button>
+        <button className='paginator-button paginator-prev' onClick={handlePrev} disabled={currentPage === 1}>
+					<i className={'fa-solid fa-angle-left'}></i>
+				</button>
+        <div className={'paginator-controls'}>{children}</div>
+        <button className='paginator-button paginator-next' onClick={handleNext} disabled={currentPage === totalPages}>
+					<i className={'fa-solid fa-angle-right'}></i>
+				</button>
+        <button className='paginator-button paginator-last' onClick={handleLast} disabled={currentPage === totalPages}>
+					<i className={'fa-solid fa-angle-double-right'}></i>
+				</button>
+      </div>
+    </div>
+>>>>>>> fa0a6c237577a0f18b48654f1e055ca32aab2241
   );
 };
