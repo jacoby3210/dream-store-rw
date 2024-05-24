@@ -1,0 +1,110 @@
+/* basics */
+a { 
+	appearance: none; 
+	text-decoration: none;
+}
+
+a:visited {
+	appearance: none; 
+}
+
+body {
+
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+	overflow-x: hidden;
+
+	font-family: 'Lato';
+	font-style: normal;
+
+	margin: 0px auto;
+	width: 100dvw;
+	
+}
+
+h1, h2, h3, h4, h5, h6, 
+p { margin: 0px;}
+
+h1 {
+	color:          $colorText;
+	font-weight:    900;
+	font-size:      48px;
+	line-height: 		1;
+}
+
+h1 span {
+	color:          $colorText;
+	font-size: 			32px;
+	font-weight:    700;
+}
+
+h2 {
+	font-size: 		$fontSizeLargeExtra;
+	font-weight: 	400;
+	// line-height: 	var(--line-height-large-extra);
+	text-align: 	center;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: $fontSizeMediumPlus;
+	line-height: 20px;
+	text-align: center;
+	color: $colorTextInvert;
+}
+
+h3 span {
+	font-weight: 700;
+	font-size: $fontSizeLarge;
+	line-height: 30px;
+	text-align: center;
+}
+
+h4 {
+	font-size: $fontSizeLarge;
+}
+
+header {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+
+	background-color: $colorBgMenu;
+	width: 100%;
+}
+
+main {
+	width: 100%;
+}
+
+menu { 
+	display: flex;
+	flex-direction: row;
+	gap: 33px; 
+
+	margin: 0;
+	padding: 0px;
+	height: 44px;
+}
+
+p {
+	font-size: $fontSizeMediumPlus;
+	white-space: pre-wrap;
+}
+
+section {
+	display: grid;
+	width: 100%;
+}
+
+
+/* utils */
+.accent {color: $colorAccent01;}
+
+// 
+#root {
+	box-sizing: border-box;
+	width: 100vw;
+}

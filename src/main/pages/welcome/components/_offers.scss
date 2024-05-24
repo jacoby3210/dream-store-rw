@@ -1,0 +1,25 @@
+@import '../../../../assets/themes/_vars';
+
+.offers {
+
+	.content {
+		display: grid;
+		gap: 30px;
+		grid-template-columns: repeat(3, 360px);
+		grid-template-rows: 260px 180px; 
+		justify-content: center;
+	
+		padding: 65px 0px 100px;
+	}
+
+	&-sample {
+		display: flex;
+		align-items:center;
+		justify-content: center;
+	}
+
+	&-accesories {
+		grid-column: 1 / 4;
+	}
+
+}

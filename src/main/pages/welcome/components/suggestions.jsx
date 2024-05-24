@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import {View} from '/src/common/common.js';
 import ProductCard from '/src/main/layouts/product-card/product-card';
+import './_suggestions.scss'
 
 const Suggestions = ({
 	startIndex = 0,				// Первый элемент для отображения.

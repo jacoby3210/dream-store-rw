@@ -1,3 +1,181 @@
+/* basics */
+a {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  text-decoration: none;
+}
+
+a:visited {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  font-family: "Lato";
+  font-style: normal;
+  margin: 0px auto;
+  width: 100dvw;
+}
+
+h1, h2, h3, h4, h5, h6,
+p {
+  margin: 0px;
+}
+
+h1 {
+  color: #222222;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1;
+}
+
+h1 span {
+  color: #222222;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+h3 span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  background-color: #222222;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+menu {
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+  margin: 0;
+  padding: 0px;
+  height: 44px;
+}
+
+p {
+  font-size: 16px;
+  white-space: pre-wrap;
+}
+
+section {
+  display: grid;
+  width: 100%;
+}
+
+/* utils */
+.accent {
+  color: #F26376;
+}
+
+#root {
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+.icon-cart-page {
+  background-image: url(../images/payment.svg);
+}
+
+.icon-register-page {
+  background-image: url(../images/profile.svg);
+}
+
+.icon-search-string {
+  background-image: url(../images/search.svg);
+}
+
+.icon-settings-page {
+  background-image: url(../images/settings.svg);
+}
+
+.icon-welcome-page {
+  background-image: url(../images/logo.png);
+}
+
+.offers-for-kids {
+  background-image: url(../images/offer_for_kids.jpg);
+}
+
+.offers-for-man {
+  background-image: url(../images/offer_for_men.jpg);
+}
+
+.offers-for-woman {
+  background-image: url(../images/offer_for_woman.png);
+}
+
+.offers-accesories {
+  background-image: url(../images/offer_accessories.jpg);
+}
+
+.icon-facebook {
+  background-image: url(../images/contact_facebook.svg);
+}
+
+.icon-inst {
+  background-image: url(../images/contact_inst.svg);
+}
+
+.icon-pin {
+  background-image: url(../images/contact_pin.svg);
+}
+
+.icon-twitter {
+  background-image: url(../images/contact_twitter.svg);
+}
+
 .main .div {
   display: inline;
+}
+
+@media only screen and (min-width: 769px) {
+  .content {
+    max-width: 1600px;
+    width: 1140px;
+    justify-self: center;
+  }
+  .features {
+    grid-template-columns: 360px 360px 360px;
+    height: 340px;
+  }
+  .subscribe .content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=theme.css.map */

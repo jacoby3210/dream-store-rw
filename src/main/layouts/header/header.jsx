@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import {Popup} from '/src/common/common.js';
 import Navigator from './components/navigator';
+import './_header.scss'
 
 const Header = () => {
 
@@ -23,7 +24,7 @@ const Header = () => {
 					<Link className='header-menu-button icon-cart-page' to="/cart">
 						{cart_total_items == 0 ? undefined: <span>{cart_total_items}</span>}
 					</Link>
-					<Popup className='header-menu-button icon-settings-popup' >
+					<Popup className='header-menu-button icon-settings-page' >
 						<Navigator/>
 					</Popup>
 				</menu>

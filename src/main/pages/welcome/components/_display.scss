@@ -1,0 +1,29 @@
+@import '../../../../assets/themes/_vars';
+
+.display {
+	background-color: #F1E4E6;
+
+	.content {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 64px;
+	}
+	img {
+		max-width: 55%;
+		height: 100%;
+	}
+
+	&-title {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 15px;
+	}
+
+	&-title-markdown {
+		background-color: $colorAccent01;
+		height: 92px;
+		width: 12px;
+	}
+}

@@ -25,11 +25,7 @@ export const Paginator = ({
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
 
-<<<<<<< HEAD
 	// Get first link.
-=======
-	// Определить первую ссылку.
->>>>>>> fa0a6c237577a0f18b48654f1e055ca32aab2241
 	const firstVisiblePageControl = Math.min(
 		Math.max(currentPage - Math.floor(visiblePageControls / 2), 1),
 		totalPages - visiblePageControls + 1

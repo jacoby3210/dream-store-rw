@@ -1,12 +1,13 @@
 import logo from '/src/assets/images/showcase_background.png'
+import './_display.scss'
 
 const Display = () => {
 	return (
 		<section className="section display">
 			<div className="content">
 				<img src={logo}/>
-				<div className="showcase-title">
-					<div className="showcase-title-markdown"></div>
+				<div className="display-title">
+					<div className="display-title-markdown"></div>
 					<h1>
 						THE BRAND 
 						<br/>
