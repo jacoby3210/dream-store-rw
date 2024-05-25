@@ -1,13 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
+import {mergeProps} from 'react-aria';
+import './_popup.scss'
 
 export const Popup = ({
 	children, 
+	content = '',
 	openState = false,
-	text = '',
 	...props
 }) => {
 
 	// Main functionality.
+	const resultProps = mergeProps({className:'popup-button'}, props);
 	const self = useRef(null);
 	const [isOpenState, setOpenState] = useState(openState);
 	const handleClick= () => {setOpenState((prevOpenState) => !prevOpenState)}
@@ -22,13 +25,12 @@ export const Popup = ({
 		return () => {document.removeEventListener('click', handleClickOutside, true);};
 	}, [openState]);
 
+
 	// Render component.
 	return (	
-		<div className='popup' ref={self} {...props}>
-			<button className='popup-button' onClick={handleClick}>
-				{(text.length != 0 && <span>{text}</span>)}
-			</button>
+		<button  onClick={handleClick} {...resultProps}>
+			{(content.length != 0 && <span>{content}</span>)}
 			{(isOpenState && <div className='popup-view'>{children}</div>)}
-		</div>
+		</button>
 	)
 }

@@ -1,0 +1,30 @@
+@import '../../../assets/themes/_vars';
+
+/* popup */
+
+.popup-button {
+	box-sizing: border-box;
+	display: flex;
+	position: relative;
+	
+	border: none;
+	font-size: $fontSizeMediumPlus;
+	
+  padding: 0px;
+  height: max-content;
+	
+	.popup-view {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 55px;
+		z-index: 999;
+		text-align: left;
+
+		background-color: white;
+
+		margin: 0px;
+		padding: 16px 0px;
+		width: max-content;
+	}
+}

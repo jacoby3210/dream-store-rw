@@ -1,3 +1,4 @@
+import {mergeProps} from 'react-aria';
 
 export const View = ({
 	data = [],											// Data provider for mapping.

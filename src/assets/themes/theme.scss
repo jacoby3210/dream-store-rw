@@ -2,6 +2,10 @@
 @import './basics';
 @import './resources';
 
+.fa-solid{
+	color: white;
+	font-size: $fontSizeLargeExtra;
+}
 .main {
 	.div{display: inline;}
 }

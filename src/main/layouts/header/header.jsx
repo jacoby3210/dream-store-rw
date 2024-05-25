@@ -14,7 +14,9 @@ const Header = () => {
 			<div className='content'>
 				<menu className='header-menu-left'>
 					<Link className='header-menu-button header-logo icon-welcome-page' to="/"/>
-					<button className='header-menu-button icon-sales-page'></button>
+					<button className='header-menu-button icon-sales-page'>
+						<i className={'fa-solid fa-percent'}/>
+					</button>
 				</menu>
 				<div className='header-search-widget'>
 					{/* <button className='header-menu-button icon-search-string'></button> */}

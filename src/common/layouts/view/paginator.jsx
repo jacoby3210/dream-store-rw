@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import {mergeProps} from 'react-aria';
+import './_paginator.scss'
 
 export const Paginator = ({ 
 	itemsPerPage, 				// Количество элементов на странице.
@@ -10,6 +12,7 @@ export const Paginator = ({
 	
   const [currentPage, setCurrentPage] = useState(1);
 
+	// const resultProps = mergeProps({className:'popup-button'}, props);
   const totalPages = Math.ceil(totalItems / itemsPerPage);
 
 	const handleToPage = (page) => {
@@ -50,7 +53,7 @@ export const Paginator = ({
 				<i className={'fa-solid fa-angle-double-left'}></i>
 			</button>
 			<button className='paginator-button paginator-prev' onClick={handlePrev} disabled={currentPage === 1}>
-				<i className={'fa-solid fa-angle-left'}></i>
+				<i className={'solid fa-angle-left'}></i>
 			</button>
 			<div className={'paginator-controls'}>{children}</div>
 			<button className='paginator-button paginator-next' onClick={handleNext} disabled={currentPage === totalPages}>

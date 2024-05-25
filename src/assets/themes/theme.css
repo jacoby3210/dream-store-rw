@@ -144,6 +144,10 @@ section {
   background-image: url(../images/offer_accessories.jpg);
 }
 
+.subscribe {
+  background-image: url(../images/subscribe_bg.jpg);
+}
+
 .icon-facebook {
   background-image: url(../images/contact_facebook.svg);
 }
@@ -158,6 +162,11 @@ section {
 
 .icon-twitter {
   background-image: url(../images/contact_twitter.svg);
+}
+
+.fa-solid {
+  color: white;
+  font-size: 30px;
 }
 
 .main .div {

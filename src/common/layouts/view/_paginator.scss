@@ -1,0 +1,34 @@
+@import '../../../assets/themes/_vars';
+
+.paginator {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	margin: auto;
+	height: 45px;
+	width: 300px;
+
+	&-button  {
+		appearance: none;
+		background-color: transparent;
+		border: none;
+		color: #6F6E6E;
+		font-size: var(--font-size-medium-plus);
+
+		margin: 0px 10px;
+		padding: 0px;
+		height: 18px;
+		width: 18px;
+	}
+		
+	&-button-current {
+		color: var(--color_04);
+	}
+
+	&-controls {
+		display: flex;
+		flex-direction: row;
+		margin: 0px 10px;
+	}
+}

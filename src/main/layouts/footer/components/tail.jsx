@@ -8,10 +8,10 @@ const Tail = () => {
 					© 2022  Brand  All Rights Reserved.
 				</p>
 				<menu className="tail-social-media">
-					<a className="social-media-link icon-facebook" href="#"></a>
-					<a className="social-media-link icon-inst"     href="#"></a>
-					<a className="social-media-link icon-pin"      href="#"></a>
-					<a className="social-media-link icon-twitter"  href="#"></a>
+					<a className="tail-social-media-link icon-facebook" href="#"></a>
+					<a className="tail-social-media-link icon-inst"     href="#"></a>
+					<a className="tail-social-media-link icon-pin"      href="#"></a>
+					<a className="tail-social-media-link icon-twitter"  href="#"></a>
 				</menu>
 			</div>
 		</section>

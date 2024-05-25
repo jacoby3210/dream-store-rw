@@ -20,12 +20,15 @@
 
 	&-menu-button {
 		box-sizing: content-box;
+		cursor: pointer;
+		position: relative;
+		
 		background-color: transparent;
 		background-position: center;
 		background-repeat: no-repeat;
 		border: none;
 		text-decoration: none;
-		position: relative;
+
 		margin: auto;
 		padding: 0px 10px;
 		min-height: 32px; 
@@ -49,23 +52,24 @@
 		width: 20px;
 	}
 
-	.header-menu-button .popup {
+	&-menu-button .popup-view {
 		right: 0px;
+		padding: 0px;
 	}
 	
-	.header-menu-navigator {
+	&-menu-navigator {
 		display: flex;
 		flex-direction: column;
+		padding: 0px;
 		width: 232px;
 	}
 	
-	.header-menu-navigator-group {
-		color: var(--color_03);
-		padding: 5px 0px;
+	&-menu-navigator-li {
 		list-style: none;
+		text-align: right;
 	}
-	
-	.header-menu-navigator-link {
+
+	&-menu-navigator-link {
 		appearance: none;
 		color: var(--color_05);
 		font-size: var(--font-size-medium);
@@ -73,7 +77,7 @@
 		padding: 5px 20px;
 	}
 		
-	.header-menu-navigator-link:hover {
+	&-menu-navigator-link:hover {
 		appearance: none;
 		color: var(--color_03);
 		text-decoration: underline;
