@@ -13,8 +13,10 @@ const Products = ({
 	
 	const [first, setFirst] = useState(0);
 	const onPageChange = (first) => {setFirst(first);};
-	useEffect(() => {fetchData();}, [data]);	
 	
+	window.scrollTo(0, 0)
+	useEffect(() => {fetchData();}, [data]);	
+
 	return (
 		<section className="section products">
 			<div className="content">

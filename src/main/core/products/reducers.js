@@ -8,7 +8,7 @@ const fetchDataSuccess = (state = {}, action) => {
 // Called in case of unsuccessful loading of product information. 
 const fetchDataFailure = (state = {}, action) => {
 	return {
-		products: [],
+		... state,
 		error: action.payload,
 	}
 }

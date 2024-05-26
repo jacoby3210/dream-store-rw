@@ -78,7 +78,7 @@ const Filter = ({
 		<div className="filter">
 			<div className='content'>
 				<div className="primary">
-					<Popup text={<span>FILTER<i className={'fa-solid fa-filter'}></i></span>}>
+					<Popup content={<span>FILTER<i className={'fa-solid fa-filter'}></i></span>}>
 						<Accordion className="category-accordion accordion">
 							<h4 shown="true">CATEGORY</h4>
 							<div>
@@ -93,13 +93,13 @@ const Filter = ({
 				</div>
 				<div className="optional">
 					<Select
-						text={'SIZE'} 
+						caption={'SIZE'} 
 						options={[{range:'S'}, {range:'M'}, {range:'L'}, {range:'XL'}]} 
 						onChange={handleFilterBySize}
 						RenderElement={Option}
 					/>
 					<Select
-						text={'PRICE'} 
+						caption={'PRICE'} 
 						options={[{range:'0-50'}, {range:'50-99'}, {range:'100-500'}, {range:'500-1000'}]} 
 						onChange={handleFilterByPrice}
 						RenderElement={Option}

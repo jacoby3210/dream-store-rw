@@ -28,7 +28,7 @@ export const Popup = ({
 
 	// Render component.
 	return (	
-		<button  onClick={handleClick} {...resultProps}>
+		<button onClick={handleClick} ref={self} {...resultProps}>
 			{(content.length != 0 && <span>{content}</span>)}
 			{(isOpenState && <div className='popup-view'>{children}</div>)}
 		</button>

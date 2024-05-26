@@ -4,8 +4,8 @@ import './_select.scss'
 export const Select = ({
 	caption = '',
 	options = [],
-	onChange = () => {},	//
-	RenderElement,			// Компонент для отображения элемента выпадающего списка.
+	onChange = () => {},
+	RenderElement,
 }) => {
 
 	const selectRef = useRef(null)

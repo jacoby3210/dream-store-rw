@@ -50,7 +50,7 @@ export const Paginator = ({
 				<i className={'fa-solid fa-angle-double-left'}></i>
 			</button>
 			<button className='paginator-button paginator-prev' onClick={handlePrev} disabled={currentPage === 1}>
-				<i className={'solid fa-angle-left'}></i>
+				<i className={'fa-solid fa-angle-left'}></i>
 			</button>
 			<div className={'paginator-controls'}>{children}</div>
 			<button className='paginator-button paginator-next' onClick={handleNext} disabled={currentPage === totalPages}>

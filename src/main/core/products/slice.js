@@ -22,7 +22,7 @@ export const {
 export const fetchData = () => {
   return async (dispatch) => {
     try {
-      dispatch(fetchDataSuccess(data));
+      dispatch(fetchDataSuccess(stateProducts));
     } catch (error) {
 			dispatch(fetchDataFailure(error.message));
     }

@@ -1,7 +1,6 @@
 import React from 'react';
 import './_product-card.scss'
 
-
 const ProductCard = ({
 	bg, 
 	caption, 
@@ -11,6 +10,7 @@ const ProductCard = ({
 }) => {
 
 	const handleClick = (evt, item) => {
+		
 	}
 
 	return (

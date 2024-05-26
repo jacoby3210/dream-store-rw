@@ -8,17 +8,6 @@
 		position: relative;
 	}
 	
-	&:hover .product-picture::after {
-		position: absolute;
-		top: 0px; left: 0px;
-		z-index: 999;
-		
-		content: "";
-		background-image: url('/src/assets/images/product_hover.png');
-		height: 100%;
-		width: 100%;
-	}
-		
 	&-info {
 		display: flex;
 		flex-direction: column;
@@ -40,7 +29,19 @@
 			color: $colorAccent01;
 		}
 	}
+}
 
+.product-card:hover {
+	.product-card-picture::after {
+		position: absolute;
+		top: 0px; left: 0px;
+		z-index: 999;
+		
+		content: "";
+		background-image: url('/src/assets/images/product_hover.png');
+		height: 100%;
+		width: 100%;
+	}
 }
 	
 	

@@ -7,7 +7,7 @@ import './_header.scss'
 
 const Header = () => {
 
- const cart_total_items = 0; // useSelector(state => state.user.cart.entries.length);
+	const cart_total_items = useSelector(state => state.user.cart.entries.length);
 
 	return (
 		<header className='header'>
@@ -23,7 +23,7 @@ const Header = () => {
 				</div>
 				<menu className='header-menu-right'>
 					<Link className='header-menu-button icon-register-page' to="/register"/>
-					<Link className='header-menu-button icon-cart-page' to="/cart">
+					<Link className='header-menu-button icon-cart-page' to="/shopping-cart">
 						{cart_total_items == 0 ? undefined: <span>{cart_total_items}</span>}
 					</Link>
 					<Popup className='header-menu-button icon-settings-page' >

@@ -1,0 +1,17 @@
+@import '../../../../assets/themes/_vars';
+
+.caption {
+	display: flex;
+	justify-content: center;
+	background-color: #F8F3F4;
+	height: 148px;
+}
+
+.caption .content {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: wrap;
+	padding: 0px 16px;
+}

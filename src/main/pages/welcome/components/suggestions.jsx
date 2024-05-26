@@ -11,9 +11,9 @@ const Suggestions = ({
 	visibleCount = 9,			// 
 }) => {
 
-	const auth = false;					//useSelector(state => state.user.auth);
-	const data_suggestions = [];//useSelector(state => state.user.suggestions)
-	const data_common = useSelector(state => state.products.filter.result)
+	const auth 							= useSelector(state => state.user.auth);
+	const data_suggestions 	= useSelector(state => state.user.suggestions)
+	const data_common 			= useSelector(state => state.products.filter.result)
 
 	return (
 		<section className="section suggestions">

@@ -1,0 +1,22 @@
+@import '../../../assets/themes/_vars';
+.cart {
+	display: flex;
+  flex-direction: column;
+}
+
+.cart-main {
+	display: flex;
+  flex-direction: row;
+	justify-content: center;
+	padding: 96px 0px;
+}
+
+.cart-main .content {
+	display: flex;
+}
+
+.cart-list {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
