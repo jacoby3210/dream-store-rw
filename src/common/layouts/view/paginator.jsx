@@ -3,17 +3,17 @@ import {mergeProps} from 'react-aria';
 import './_paginator.scss'
 
 export const Paginator = ({ 
-	itemsPerPage, 				// Количество элементов на странице.
-	totalItems, 					// Количество элементов в исходном массиве данных. 
-	visiblePageControls,	// Количество отображаемых кнопок для страниц.
+	itemsPerPage, 				// The number of elements on an individual page.
+	itemsTotal, 					// Total number of elements in the original data array. 
+	pageControlsCount,		// The number of buttons displayed for page switching.
 	onChangeCallback, 		// 
-	...props							// 
+	...props							// Common react properties.
 }) => {
 	
   const [currentPage, setCurrentPage] = useState(1);
 
-	// const resultProps = mergeProps({className:'popup-button'}, props);
-  const totalPages = Math.ceil(totalItems / itemsPerPage);
+	const resultProps = mergeProps({className:'paginator'}, props);
+  const totalPages = Math.ceil(itemsTotal / itemsPerPage);
 
 	const handleToPage = (page) => {
 		onChangeCallback((page-1) * itemsPerPage);
@@ -21,22 +21,19 @@ export const Paginator = ({
 	}
 
   const handleFirst = () => {handleToPage(1);};
-  const handlePrev = () => {handleToPage(Math.max(currentPage - 1, 1));};
-  const handleNext = () => {handleToPage(Math.min(currentPage + 1, totalPages));};
-  const handleLast = () => {handleToPage(totalPages);};
+  const handlePrev  = () => {handleToPage(Math.max(currentPage - 1, 1));};
+  const handleNext  = () => {handleToPage(Math.min(currentPage + 1, totalPages));};
+  const handleLast  = () => {handleToPage(totalPages);};
 
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = Math.min(startIndex + itemsPerPage, totalItems);
-
-	// Get first link.
+	// Get first visible page control.
 	const firstVisiblePageControl = Math.min(
-		Math.max(currentPage - Math.floor(visiblePageControls / 2), 1),
-		totalPages - visiblePageControls + 1
-	);
+		Math.max(currentPage - Math.floor(pageControlsCount / 2), 1),
+		totalPages - pageControlsCount + 1
+	),
+	lastVisiblePageControl = firstVisiblePageControl + pageControlsCount;
 
 	const children = [];
-	for(let i = 0; i < visiblePageControls; i++){
-		const index = firstVisiblePageControl + i;
+	for(let index = firstVisiblePageControl; index < lastVisiblePageControl; index++){
 		children.push(
 			<button key={index}
 				className={`paginator-button${ (currentPage == index ? ' paginator-button-current' : '') }`}
@@ -48,7 +45,7 @@ export const Paginator = ({
 	}
 
 	return (
-		<div className='paginator' {...props}>
+		<div {...resultProps}>
 			<button className='paginator-button paginator-first' onClick={handleFirst} disabled={currentPage === 1}>
 				<i className={'fa-solid fa-angle-double-left'}></i>
 			</button>

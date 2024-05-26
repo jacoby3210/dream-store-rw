@@ -7,13 +7,13 @@ import ProductCard from '/src/main/layouts/product-card/product-card';
 import './_suggestions.scss'
 
 const Suggestions = ({
-	startIndex = 0,				// Первый элемент для отображения.
-	visibleCount = 9,			// Количество отображаемых элементов.
+	startIndex = 0,				// 
+	visibleCount = 9,			// 
 }) => {
 
 	const auth = false;					//useSelector(state => state.user.auth);
 	const data_suggestions = [];//useSelector(state => state.user.suggestions)
-	const data_common = [];			//useSelector(state => state.products.filter.result)
+	const data_common = useSelector(state => state.products.filter.result)
 
 	return (
 		<section className="section suggestions">

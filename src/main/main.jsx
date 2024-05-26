@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
 import Header from './layouts/header/header'
 import Footer from './layouts/footer/footer'
 
+import Catalog from './pages/catalog/catalog'
 import Welcome from './pages/welcome/welcome'
 
 import '/src/assets/themes/theme.scss'
@@ -23,7 +24,7 @@ function Main() {
 				<Routes>
 					{/* <Route element={<Cart/>} path="/cart"/>  */}
 					
-					{/* <Route element={<Catalog type={"all"}/>} path="/catalog/" /> */}
+					<Route element={<Catalog type={"all"}/>} path="/catalog/" />
 					{/* {types.map((type) => renderLink('men', type))} */}
 					{/* {types.map((type) => renderLink('women', type))} */}
 					{/* {types.map((type) => renderLink('kids', type))} */}

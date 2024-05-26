@@ -1,0 +1,19 @@
+@import '../../../../assets/themes/_vars';
+
+.products {
+
+	.products-list {
+		display: grid;
+		gap: 30px;
+		grid-template-columns: repeat(3, 360px);
+		grid-template-rows: repeat(2, 581px);
+		justify-content: center;
+	}
+	
+	.products-paginator {
+		box-sizing: border-box;
+		margin: 45px 0px 95px;
+		width: 100%;
+	}
+	
+}

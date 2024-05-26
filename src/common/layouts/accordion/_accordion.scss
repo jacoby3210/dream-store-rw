@@ -1,0 +1,8 @@
+@import '../../../assets/themes/_vars';
+
+.accordion {
+	gap: 5px;
+	overflow: hidden;
+
+	> :not([shown='true']) + div {display: none;} 
+}

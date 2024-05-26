@@ -1,4 +1,5 @@
 import React from 'react';
+import './_product-card.scss'
 
 
 const ProductCard = ({
@@ -13,12 +14,12 @@ const ProductCard = ({
 	}
 
 	return (
-		<div className='product-sample' onClick={handleClick}>
-			<picture className='product-picture'><img src={bg}/></picture>
-			<div className='product-info'>
-					<h4 className='product-caption'>{caption}</h4>
-					<p className='product-description'>{description}</p>
-					<p className='product-price'>{price}</p>
+		<div className='product-card' onClick={handleClick}>
+			<picture className='product-card-picture'><img src={bg}/></picture>
+			<div className='product-card-info'>
+					<h4 className='product-card-info-caption'>{caption}</h4>
+					<p className='product-card-info-description'>{description}</p>
+					<p className='product-card-info-price'>{price}</p>
 			</div>
 		</div>
 	);
