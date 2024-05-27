@@ -45,6 +45,7 @@
 			box-sizing: border-box;
 			padding: 0px 16px;
 			height: max-content;
+			min-height: 525px;
 			width: 360px;
 
 			h4 {
@@ -61,7 +62,7 @@
 				height: 37px;
 			}
 			h4[shown='true']{color: $colorAccent01;}
-			div {
+			h4[shown='true'] + div {
 				display: flex;
 				flex-direction: column;
 				margin-bottom: 25px;
