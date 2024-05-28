@@ -2,6 +2,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import { Accordion, Popup, Select } from '/src/common/common.js';
+import {brands, designers, types} 	from '/src/main/core/constants/constants' 
+
 import { 
 	filterDataByPrice, 
 	filterDataBySize, 
@@ -17,8 +19,8 @@ const Filter = ({
     return string.charAt(0).toUpperCase() + string.slice(1);
 	}
 
-	const getLink = (category, name) => {
-		const path = `/${category}/${name}/`;
+	const getLink = (name) => {
+		const path = `/${name}/`;
 		return (
 			<Link key={path} className='header-menu-navigator-link' to={path}>
 				{utilCapitalizeFirstLetter(name)}
@@ -27,7 +29,6 @@ const Filter = ({
 	}
 
 	const dispatch = useDispatch();
-	const types = useSelector(state => state.products.options.types)
 
 	const getSelectedOptions = (select) => {
 		const rs = [];
@@ -82,11 +83,14 @@ const Filter = ({
 						<Accordion className="category-accordion accordion">
 							<h4 shown="true">CATEGORY</h4>
 							<div>
-								{types.map((type) => getLink('men', type))}
+								{types.map((type) => getLink(type))}
 							</div>
 							<h4>BRAND</h4>
-							<div/>
+							<div>
+								{brands.map((type) => getLink(type))}
+							</div>
 							<h4>DESIGNER</h4>
+								{designers.map((type) => getLink(type))}
 							<div/>
 						</Accordion>
 					</Popup>

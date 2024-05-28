@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+
+import {colors, sizes} 			from '/src/main/core/constants/constants' 
 import { updateItemOnCart } from '/src/main/core/user/slice';
 import './_entry.scss';
 
 const Entry = ({ item: propItem, options: propOptions }) => {
-
-	const colors = useSelector(state => state.products.options.colors)
-	const sizes = useSelector(state => state.products.options.sizes)
 
   const { bg, caption, price, type } = propItem || {};
   // const { color, size } = propOptions || {};

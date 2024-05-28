@@ -7,8 +7,8 @@ import ProductCard from '/src/main/layouts/product-card/product-card'
 import './_products.scss'
 
 const Products = ({
-	data = [], 					// Массив данных для отображения.
-	range = 0,					// Количество отображаемых элементов.
+	data = [], 
+	range = 0,
 }) => {
 	
 	const [first, setFirst] = useState(0);

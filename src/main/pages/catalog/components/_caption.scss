@@ -3,8 +3,8 @@
 .catalog-caption {
 	display: flex;
 	justify-content: center;
-	background-color: #F8F3F4;
-	height: 148px;
+	background-color: $colorBgPageHeader;
+	height: 150px;
 	
 	.content {
 		box-sizing: border-box;
@@ -14,5 +14,7 @@
 		flex-wrap: wrap;
 
 		padding: 0px 16px;
+
+		span {font-size: $fontSizeLarge;}
 	}
 }

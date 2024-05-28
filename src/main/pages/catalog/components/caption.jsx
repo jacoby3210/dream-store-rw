@@ -5,7 +5,7 @@ const Caption = ({
 	type,
 }) => {
 	return (
-		<div className="catalog-caption">
+		<div className="page-header catalog-caption">
 			<div className="content">
 				<span className="accent">{type.toUpperCase()}</span>
 				{(category && 
