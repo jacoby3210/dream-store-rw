@@ -50,7 +50,7 @@
 
 			h4 {
 				border: 0px solid $colorAccent01;
-				border-bottom: 1px solid #EBEBEB;
+				border-bottom: 1px solid $colorBgProductCard;
 				border-left-width: 5px;
 				
 				color: $colorTextShadow;
@@ -69,16 +69,7 @@
 			}
 		}
 	}
-	
-	
-	
-	
-	
 }
-
-
-
-
 
 .filter .optional {
 	display: flex;
