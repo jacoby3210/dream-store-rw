@@ -2,88 +2,100 @@
 
 .cart-menu {
 	margin-left: auto;
+	
+	form {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		
+		h4 {
+			color: $colorText;
+			font-size: $fontSizeMediumPlus;
+			font-weight: normal;
+		}
+		> div {
+			display: flex;
+			flex-direction: column;
+			border: none;
+			height: 300px;
+		}
+	
+	}
+
+	&-shipping
+	{
+		gap: 20px;
+	
+		input {
+			box-sizing: border-box;
+			border: 1px solid $colorFormButtonBorder;
+			padding: 0px 10px;
+			width: 360px;
+			height: 45px;
+		}
+	
+		button {
+			appearance: none;
+			background: none;
+			border: 1px solid $colorFormButtonBorder;
+			box-shadow: none;
+			color: $colorTextShadow;
+			font-weight: 400;
+			font-size: 11px;
+			text-align: left;
+		
+			padding: 0px 10px;
+			width: max-content;
+			height: 35px;
+		}
+	
+	}
+	
+	&-controls {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 16px;
+		background-color: $colorBgPageHeader;
+		border: none;
+		padding: 52px 45px;
+		width: 270px;
+	
+		h4 {
+			margin-left: auto;
+			text-align: right;
+		}
+		
+		&-hr {
+			background-color: $colorBgFormHr;
+			height: 1px;
+			width: 95%;
+		} 
+	
+		&-button {
+			
+			height: 50px;
+			width: 270px;
+	
+			border: 1px solid $colorFormButtonBorder;
+			line-height: 50px;
+			text-align: center;
+			
+		}
+		
+		.proceed {
+			appearance: none;
+			background-color: $colorAccent01;
+			border: none;
+			color: $colorTextInvert;
+		}
+	
+	}
 }
 
-.cart-menu form {
-	display: flex;
-	flex-direction: column;
-	gap: 40px;
-}
 
-.cart-menu form > div {
-	display: flex;
-	flex-direction: column;
-	border: none;
-	height: 300px;;
-}
 
-.cart-menu h4 {
-	color: $colorText;
-	font-size: $fontSizeMediumPlus;
-	font-weight: normal;
-}
 
-.cart-menu-shipping
-{
-	gap: 20px;
-}
 
-.cart-menu-shipping h4 {
-	vertical-align: middle;
-  line-height: 45px;
-}
 
-.cart-menu-shipping input {
-	box-sizing: border-box;
-	padding-left: 16px;
-	width: 360px;
-	height: 45px;
-}
-
-.cart-menu-shipping button {
-	font-weight: 400;
-	font-size: 11px;
-	color: #4a4a4a;
-
-	width: 150px;
-	height: 35px;
-}
-
-.controls {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 16px;
-	background-color: #F5F3F3;
-	border: none;
-	padding: 52px 45px;
-	width: 270px;
-}
-
-.controls h4 {
-	margin-left: auto;
-	text-align: right;
-}
-
-.controls-hr {
-	background-color: #E2E2E2;
-	height: 1px;
-	width: 95%;;
-} 
-
-.controls-button {
-	line-height: 50px;
-	text-align: center;
-
-	border: 1px solid #A4A4A4;
-	height: 50px;
-	width: 270px;
-}
-
-.proceed {
-	appearance: none;
-	background-color: #F16D7F;
-	border: none;
-	color: white;
-}
 

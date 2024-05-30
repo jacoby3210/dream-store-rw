@@ -56,7 +56,7 @@ const Entry = ({ item: propItem, options: propOptions }) => {
           </p>
         </div>
       </div>
-      <button className='cart-close' onClick={handleClose}><i className="fa-solid fa-close"></i></button>
+      <button className='cart-item-close' onClick={handleClose}><i className="fa-solid fa-close"></i></button>
     </div>
   );
 }

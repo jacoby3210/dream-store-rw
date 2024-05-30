@@ -38,17 +38,17 @@ const Menu = (props) => {
 					<input id="postcode" 	placeholder='Postcode' 	value={data.postcode}/>
 					<button onClick={handleSaveAsDefault}>SAVE AS DEFAULT</button>
 				</div>
-				<div className='controls'>
+				<div className='cart-menu-controls'>
 					<h4>SUB TOTAL: <span>{`$${total}`}</span></h4>
 					<h4>GRAND TOTAL: <span className='accent'>{`$${total}`}</span></h4>
-					<hr className='controls-hr'/>
-					<button className="controls-button proceed" 	onClick={handleAddOrder}>
+					<hr className='cart-menu-controls-hr'/>
+					<button className="cart-menu-controls-button proceed" onClick={handleAddOrder}>
 						{"PROCEED TO CHECKOUT"}
 					</button>
-					<Link className="controls-button continue"	to='/catalog'>
+					<Link className="cart-menu-controls-button continue"	to='/catalog'>
 						{"CONTINUE SHOPPING"}
 					</Link>
-					<button className="controls-button clear" 		onClick={handleClearCart}>
+					<button className="cart-menu-controls-button clear" 	onClick={handleClearCart}>
 						{"CLEAR SHOPPING" }
 					</button>
 				</div>

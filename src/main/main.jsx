@@ -18,9 +18,9 @@ function Main() {
 			<Router>
 				<Header/>
 				<Routes>
-					<Route element={<Catalog type={"all"}/>} path="/catalog/" />
-					<Route element={<ShoppingCart/>} path="/shopping-cart"/> 
-					<Route exact element = {<Welcome/>} path="/" />
+					<Route element={<Catalog type={"all"}/>} 	path="/catalog/" />
+					<Route element={<ShoppingCart/>} 					path="/shopping-cart"/> 
+					<Route element={<Welcome/>} 							path="/" exact />
 				</Routes>
 				<Footer/>
 			</Router>
