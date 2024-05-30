@@ -26,7 +26,7 @@
 	}
 
 	&-info-text {
-		color: #222224;
+		color: $colorText;
 		font-weight: 400;
 		font-size: 20px;
 		line-height: $fontSizeLarge;
@@ -43,7 +43,7 @@
 	}
 	
 	&-form-caption {
-		color: #222224;
+		color: $colorBgMenu;
 		font-size: fontSizeLarge;
 		font-weight: 700;
 		line-height: 28px;
@@ -52,11 +52,11 @@
 	
 	&-form-email {
 	
-		background-color: #E1E1E1;
+		background-color: $colorBgFormInput;
 		border: none;
 		border-bottom-left-radius: 50px;
 		border-top-left-radius: 50px;
-		color:#222224;
+		color:$colorText;
 		opacity: 0.67;
 	
 		box-sizing: border-box;
@@ -81,7 +81,7 @@
 		border-bottom-right-radius: 50px;
 		border-top-right-radius: 50px;
 		
-		color: #fff;
+		color: $colorTextInvert;
 		font-weight: 400;
 		font-size: $fontSizeMedium;
 		text-align: center;
@@ -103,7 +103,7 @@
 }
 
 .tail {
-	background-color: #222224;
+	background-color: $colorBgMenu;
 
 	.content {
 		display: flex;
@@ -116,7 +116,7 @@
 	}
 
 	&-copyright {
-		color: #fbfbfb;
+		color: $colorTextInvert;
 		font-size: $fontSizeMediumPlus;
 	}
 
@@ -133,7 +133,7 @@
 		height: 30px;
 		width: 30px;
 	
-		background-color: #FFFFFF;
+		background-color: $colorBgMain;
 		background-repeat: no-repeat;
 		background-position: center;
 		border: none;

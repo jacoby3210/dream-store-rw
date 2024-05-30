@@ -14,7 +14,7 @@
 	}
 
 	.fa-solid {
-		color: white;
+		color: $colorTextInvert;
 		font-size: $fontSizeLargeExtra;
 	}
 	
@@ -46,8 +46,8 @@
 		right: 0px;
 		top: -25%;
 	
-		border: 1px solid #F26376;
-		background-color: #F26376;
+		border: 1px solid $colorAccent02;
+		background-color: $colorAccent01;
 		border-radius: 25px;
 		color: white;
 		line-height: 1.3;
@@ -76,15 +76,15 @@
 
 	&-menu-navigator-link {
 		appearance: none;
-		color: var(--color_05);
-		font-size: var(--font-size-medium);
+		color: $colorTextShadow;
+		font-size: $fontSizeMedium;
 		text-decoration: none;
-		padding: 5px 20px;
+		padding: $paddingDefault 20px;
 	}
 		
 	&-menu-navigator-link:hover {
 		appearance: none;
-		color: var(--color_03);
+		color: $colorAccent01;
 		text-decoration: underline;
 	}
 }

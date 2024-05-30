@@ -1,21 +1,26 @@
 // color pallette in project.
 
+$colorBgDefault:		#FFFFFF;
 $colorBgMain: 			#FFFFFF;
 $colorBgMenu: 			#222222;
 $colorBgPageHeader:	#F8F3F4;
 $colorBgProductCard:#F8F8F8;
-$colorBgProduct:#EBEBEB;
+$colorBgProduct:		#EBEBEB;
+$colorBgFormInput:	#cfcfcf;
 
 $colorText: 				#222222;
-$colorTextInvert:		#FFFFFF;
+$colorTextInvert:		#fbfbfb;
 $colorTextShadow:		#5d5d5d;
 
 $colorAccent01:			#F26376;
 $colorAccent02:			#F16D7F;
 
 // font sizing in project.
-$fontSizeLargeExtra:		 30px;
-$fontSizeLarge: 				 24px; 
-$fontSizeMediumPlus:		 16px;
-$fontSizeMedium: 				 14px;
-$fontSizeTiny: 					 11px;
+$fontSizeLargeExtra:		30px;
+$fontSizeLarge: 				24px; 
+$fontSizeMediumPlus:		16px;
+$fontSizeMedium: 				14px;
+$fontSizeTiny: 					11px;
+
+// 
+$paddingDefault: 				5px;

@@ -53,7 +53,7 @@ h3 {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: #FFFFFF;
+  color: #fbfbfb;
 }
 
 h3 span {
@@ -164,13 +164,23 @@ section {
   background-image: url(../images/contact_twitter.svg);
 }
 
-.fa-solid {
-  color: white;
-  font-size: 30px;
-}
-
 .main .div {
   display: inline;
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  color: #5d5d5d;
+  font-size: 14px;
+  line-height: 1px;
+  padding-left: 5px;
+  width: 100%;
 }
 
 @media only screen and (min-width: 769px) {

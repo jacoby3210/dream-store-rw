@@ -10,7 +10,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: 5px;
+		gap: $paddingDefault;
 	
 		background-color: transparent;
 		border: none;
@@ -41,16 +41,15 @@
 	&-options {
 	
 		display: none;
-		gap: 8px;
+		gap: $paddingDefault;
 		position: absolute;
 		align-items: flex-start;
 		z-index: 999;
 		
-		background-color: white;
-		box-shadow: 6px 4px 35px 0px #00000036;
-	
+		background-color: $colorBgDefault;
+		box-shadow: 6px 4px 35px 0px $colorBgMenu;
 		margin: 0px;
-		padding: 8px 0px;
+		padding: $paddingDefault 0px;
 		width: 100%;
 	
 		li {
