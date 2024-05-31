@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import { connect } from 'react-redux';
 
-import { View } from '/src/common/common.js';
-import { fetchData } from '/src/main/core/products/slice';
+import { View } 			from '/src/common/common.js';
+import { fetchData } 	from '/src/main/core/products/slice';
+import PageHeader 		from "/src/main/layouts/page-header/page-header"
 
-import Caption 	from './components/caption';
 import Entry 		from './components/entry'
 import Menu 		from './components/menu'
 
@@ -18,7 +18,9 @@ const ShoppingCart = ({
 
 	return (
 		<div className="cart">
-			<Caption/>
+			<PageHeader 
+				text_1={"SHOPPING CART"} 
+			/>
 			<section className='cart-main'>
 				<div className="content">
 					<View 
