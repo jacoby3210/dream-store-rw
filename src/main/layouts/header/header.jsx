@@ -22,7 +22,7 @@ const Header = () => {
 					{/* <button className='header-menu-button icon-search-string'></button> */}
 				</div>
 				<menu className='header-menu-right'>
-					<Link className='header-menu-button icon-register-page' to="/register"/>
+					<Link className='header-menu-button icon-register-page' to="/user"/>
 					<Link className='header-menu-button icon-cart-page' to="/shopping-cart">
 						{cart_total_items == 0 ? undefined: <span>{cart_total_items}</span>}
 					</Link>

@@ -1,0 +1,19 @@
+@import '../../../../assets/themes/_vars';
+
+.user-data {
+	display: flex;
+	flex-direction: column;
+	width: 360px;
+
+	fieldset {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		border: none; padding: 0px;}
+	input {
+		box-sizing: border-box;
+		margin: 0px;
+		height: 45px; 
+		width:100%;
+	}
+}
