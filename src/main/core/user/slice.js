@@ -16,4 +16,5 @@ export const {
 	subscribe,
 	updateShippingAddress,
 	updateItemOnCart,
+	userSubscribe,
 } = userSlice.actions;

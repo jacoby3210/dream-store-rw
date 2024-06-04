@@ -9,4 +9,5 @@ Currently, two official plugins are available:
 
 1 - Убрать статические данные из store. 
 2 - Filter: BRAND & DESIGNER list.
-3 - 
+3 - HTML Layout Profile.
+4 - Hide Subscription.

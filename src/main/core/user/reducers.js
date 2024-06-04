@@ -33,6 +33,11 @@ const updateShippingAddress = (state = {}, action) => {
 	state.shipping = action.payload;
 }
 
+// Subscribe user on mail forwarding.
+const userSubscribe = (state = {}, action) => {
+	state.subscribe = action.payload;
+}
+
 // Add order in user orders.
 const addOrder = (state = {}, action) => {
 }
@@ -55,4 +60,5 @@ export default {
 	subscribe,
 	updateShippingAddress,
 	updateItemOnCart,
+	userSubscribe,
 }

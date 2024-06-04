@@ -1,9 +1,16 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import avatar from '/src/assets/images/avatar.png'
 
 const Subscribe = () => {
+
+	const subscribe = useSelector(state => state.user.subscribe);
+	const handleSubscribe = () => {}
+	
 	return (
-		<section className="subscribe">
+		subscribe 
+		? null
+		: <section className="subscribe">
 			<div className="content">
 				<div className="subscribe-info">
 					<img className="subscribe-info-avatar" src={avatar} alt=""/>
@@ -13,7 +20,7 @@ const Subscribe = () => {
 					<h3 className='subscribe-form-caption'>SUBSCRIBE<span>FOR OUR NEWLETTER AND PROMOTION</span></h3>
 					<div>
 						<input className="subscribe-form-email" placeholder="Enter Your Email"/>
-						<button className="subscribe-form-button" type="submit">Subscribe</button>
+						<button className="subscribe-form-button" type="submit" onClick={handleSubscribe}>Subscribe</button>
 					</div>
 				</form>
 			</div>

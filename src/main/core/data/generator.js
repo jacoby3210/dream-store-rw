@@ -74,5 +74,6 @@ export const stateUser = {
 		city: '',
 		postcode: '',
 	},
+	subscribe: false,					// User subscribing on store mailing.
 	suggestions: [],	 			  // Products interesting to the user.
 }
