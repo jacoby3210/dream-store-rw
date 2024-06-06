@@ -34,7 +34,8 @@ const updateShippingAddress = (state = {}, action) => {
 }
 
 // Subscribe user on mail forwarding.
-const userSubscribe = (state = {}, action) => {
+const subscribeAction = (state = {}, action) => {
+	console.log(11, action.payload)
 	state.subscribe = action.payload;
 }
 
@@ -47,18 +48,11 @@ const clearCart = (state = {}, action) => {
 	state.cart = {entries: [], total: 0}
 }
 
-// 
-const subscribe =  (state = {}, action) => {
-	// send query on server.
-	// if success, show confirmation success. 
-}
-
 // Export a list of actions for goods.
 export default {
 	addOrder,
 	clearCart,
-	subscribe,
+	subscribeAction,
 	updateShippingAddress,
 	updateItemOnCart,
-	userSubscribe,
 }

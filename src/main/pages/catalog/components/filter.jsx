@@ -90,8 +90,9 @@ const Filter = ({
 								{brands.map((type) => getLink(type))}
 							</div>
 							<h4>DESIGNER</h4>
+							<div>
 								{designers.map((type) => getLink(type))}
-							<div/>
+							</div>
 						</Accordion>
 					</Popup>
 				</div>

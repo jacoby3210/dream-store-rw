@@ -1,14 +1,20 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import avatar from '/src/assets/images/avatar.png'
+import { subscribeAction } from '/src/main/core/user/slice';
 
 const Subscribe = () => {
-
+	
+	const dispatch = useDispatch();
 	const subscribe = useSelector(state => state.user.subscribe);
-	const handleSubscribe = () => {}
+
+	const handleSubscribe = (evt) => {
+		dispatch(subscribeAction(evt.target.value));
+		evt.preventDefault();
+	}
 	
 	return (
-		subscribe 
+		subscribe.length == 0 
 		? null
 		: <section className="subscribe">
 			<div className="content">

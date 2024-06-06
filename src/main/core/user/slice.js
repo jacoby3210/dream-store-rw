@@ -13,8 +13,7 @@ export default userSlice.reducer;
 export const {
 	addOrder,
 	clearCart,
-	subscribe,
+	subscribeAction,
 	updateShippingAddress,
 	updateItemOnCart,
-	userSubscribe,
 } = userSlice.actions;

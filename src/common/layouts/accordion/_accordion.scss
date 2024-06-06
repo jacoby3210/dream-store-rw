@@ -4,5 +4,6 @@
 	gap: $paddingDefault;
 	overflow: hidden;
 
+	> h4 {cursor: pointer;}
 	> :not([shown='true']) + div {display: none;} 
 }
